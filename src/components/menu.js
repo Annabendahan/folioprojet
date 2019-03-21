@@ -28,13 +28,17 @@ render() {
   let menu = ''
 
   if (this.state.show === 'icone') {
-    menu = <div onClick={this.menuAppearsHandler}> <FaBars /> </div>
+    menu = <div className="menuSmall" onClick={this.menuAppearsHandler}>
+            <FaBars />
+           </div>
   } else if (this.state.show === 'menu') {
-    menu =
-    <div className="menu">
-    MENU
-    <p onClick={this.iconeAppearsHandler} > <FaTimes /> </p>
-    </div>
+    menu = <div className="menu">
+            <Link to="/"> <p> Home </p> </Link>
+             <Link to="/templates/"> <p> Templates </p> </Link>
+            <p className="close"onClick={this.iconeAppearsHandler} >
+              <FaTimes />
+            </p>
+            </div>
   }
 
 

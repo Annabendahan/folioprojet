@@ -4,7 +4,7 @@ import React from "react"
 
 
 const Sidebar = () => (
-  <div className="sidebar">
+  <div className="inSide">
   <h1> HELLO </h1>
   </div>
 

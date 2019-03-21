@@ -232,9 +232,9 @@ h1 {
   color: black;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   text-rendering: optimizeLegibility;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.1;
 }
 h2 {
@@ -624,25 +624,60 @@ pre tt:after {
   text-align: justify;
   font-family: roboto;
   width: 70%;
+  margin: 100px;
 }
 
 
 .content{
-  padding: 20px 100px;
+  flex: 0 0 70%;
+  padding: 40px 200px;
   background: #F7F7F7;
   z-index: 5;
 }
 
 .sidebar{
-writing-mode:  vertical-rl;
-text-orientation: sideways;
- padding: 100px;
- font-size: 4rem;
- flex-direction: column-reverse;
 
+background: white;
+ flex: 0 0 20%;
+ position:relative;
+
+}
+
+
+.sidebar h1{
+  font-size: 5rem;
+}
+
+
+.inSide{
+  transform: rotate(-90deg);
+  position: absolute;
+top: 80vh;
 }
 
 .flexbox{
   display: flex;
+justify-content: space-between;
+height: 500vh;
+}
 
+.Title{
+  margin: 50px;
+}
+
+
+.templates h2{
+  font-family: roboto;
+  padding: 3px;
+  border-bottom: .05rem solid black ;
+      font-size: 3rem;
+      font-weight: 900;
+      color: transparent;
+      -webkit-text-stroke: .05rem #111;
+
+}
+
+.templates h2:hover{
+  cursor: pointer;
+  color: black;
 }
