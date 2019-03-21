@@ -229,12 +229,12 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: black;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 3rem;
   line-height: 1.1;
 }
 h2 {
@@ -247,8 +247,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: roboto;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -619,4 +618,31 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.desc{
+  text-align: justify;
+  font-family: roboto;
+  width: 70%;
+}
+
+
+.content{
+  padding: 20px 100px;
+  background: #F7F7F7;
+  z-index: 5;
+}
+
+.sidebar{
+writing-mode:  vertical-rl;
+text-orientation: sideways;
+ padding: 100px;
+ font-size: 4rem;
+ flex-direction: column-reverse;
+
+}
+
+.flexbox{
+  display: flex;
+
 }

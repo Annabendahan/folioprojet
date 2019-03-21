@@ -1,0 +1,26 @@
+.step{
+width: 50%;
+margin: 200px 100px;
+}
+
+
+.bigNumber{
+  color: yellow;
+  font-size: 15em;
+  font-family: roboto;
+  font-weight: 900;
+  padding: 20px;
+
+}
+
+
+.exp{
+  font-family: roboto;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+
+.margin{
+  margin-left: 400px;
+}
