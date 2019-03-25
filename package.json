@@ -17,7 +17,9 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "react-icons": "^3.5.0"
+    "react-icons": "^3.5.0",
+    "react-pdf": "^4.0.5",
+    "react-scroll-parallax": "^2.0.4"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

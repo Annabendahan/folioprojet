@@ -23,8 +23,9 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-         <Menu />
+
       </h1>
+      <Menu />
 
     </div>
   </header>

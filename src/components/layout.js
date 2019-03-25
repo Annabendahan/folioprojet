@@ -13,6 +13,8 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Menu from './menu'
+import Footer from './footer'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,9 +29,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+      <ParallaxProvider>
 
       <div className="flexbox">
-        <div className="content">
+        <div className="content" >
           <Header siteTitle={data.site.siteMetadata.title} />
           <div
             style={{
@@ -47,12 +50,8 @@ const Layout = ({ children }) => (
         </div>
       </div>
 
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-
-          </footer>
+          <Footer />
+           </ParallaxProvider>
 
       </>
     )}

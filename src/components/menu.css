@@ -1,15 +1,16 @@
 .menu{
 background: black;
 color:white;
-width: 300px;
-z-index: 10;
+width: 200px;
+z-index: 300;
 position: fixed;
 top: 0px;
-padding: 10px 30px;
+padding: 30px 30px;
 font-family: roboto;
 font-weight: 500;
 position: relative;
 height: 300px;
+margin: -30px;
 
 
 }
@@ -23,12 +24,15 @@ height: 300px;
   text-decoration: none;
   color: white;
   font-size: 1rem;
+}
 
-
+.menu a:hover{
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .menuSmall{
-  width: 100px;
+  width: 10px;
 
 }
 
@@ -39,4 +43,8 @@ height: 300px;
   right: 0px;
   font-size: 1rem;
   padding: 10px;
+}
+
+.close:hover{
+  cursor: pointer;
 }

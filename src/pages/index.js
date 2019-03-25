@@ -1,22 +1,35 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaBeer } from 'react-icons/fa';
+import { FaAngellist } from 'react-icons/fa';
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Steps from "../components/steps"
+import Overlap from '../components/IntroCopy'
+import { Parallax } from 'react-scroll-parallax';
+import pic1 from '../images/marvin-meyer-571072-unsplash.jpg';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1 className="Title">PORTFOLIOS SUR-MESURE</h1>
-    <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ullam enim commodi labore adipisci laborum sunt itaque obcaecati placeat ducimus tenetur praesentium, eligendi expedita nisi, maiores pariatur ipsum eaque odio! Modi magnam, asperiores autem dolorum rem nulla, tempore dignissimos veniam reiciendis voluptas accusantium officiis ipsam repellendus voluptatibus quaerat. In vero architecto ipsam odio optio, maiores nam dolor omnis. Ipsum vero perspiciatis repudiandae velit dolor doloribus reprehenderit cumque vel, veritatis, recusandae. Maiores culpa et exercitationem ea eveniet impedit corrupti ad debitis, nulla sapiente illo, accusamus nam corporis neque ut numquam eum non illum eius mollitia repellat. Tempora ratione eaque eius magnam?</p>
+    <Parallax className="Title-c" y={[-200, 80]} tagOuter="figure">
+        <h1 className="Title">Ton <span className="TitleBis"> Portfolio </span> </h1>
+    </Parallax>
 
-    <div style={{ maxWidth: `400px`, marginBottom: `1.45rem`, marginLeft: '1rem', zIndex:5 }}>
-      <Image />
+    <div style={{ width: `70%`, marginBottom: `1.45rem`, marginLeft: '12rem'}}>
+      <img  src={pic1} className="picHome" alt="fireSpot"/>
     </div>
+    <Parallax className="" y={[20, -20]} tagOuter="figure">
+        <div className="desc">
+          <h3 className="descG"> Besoin d'un site vitrine? On vous fait ça. <FaAngellist /> </h3>
+          <p> Artiste, designer, start-up en création... vous avez envie d'un site original?
+          Mais vous ne savez pas coder?
+          Choisissez parmis nos modèles ou donnez-nous votre design. On vous le développe sous 10 jours </p>
+        </div>
+     </Parallax>
+    <Overlap />
     <Steps/>
-    <Link to="/page-2/">Go to page 2</Link>
+
   </Layout>
 )
 

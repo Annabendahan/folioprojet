@@ -4,6 +4,7 @@ import React, {Component} from "react"
 import './menu.css'
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
+import Backdrop from './Backdrop'
 
 
 
@@ -35,6 +36,7 @@ render() {
     menu = <div className="menu">
             <Link to="/"> <p> Home </p> </Link>
              <Link to="/templates/"> <p> Templates </p> </Link>
+             <Link to="/contact/"> <p> Contact </p> </Link>
             <p className="close"onClick={this.iconeAppearsHandler} >
               <FaTimes />
             </p>
@@ -44,6 +46,7 @@ render() {
 
   return (
     <div >
+    <Backdrop show={this.state.show === 'menu'} clicked={this.iconeAppearsHandler}/>
     {menu}
     </div>
 

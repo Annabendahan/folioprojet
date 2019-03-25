@@ -200,7 +200,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: roboto;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -623,48 +623,74 @@ pre tt:after {
 .desc{
   text-align: justify;
   font-family: roboto;
-  width: 70%;
-  margin: 100px;
+  width: 90%;
+  margin-top:-100px;
+  margin-left: -20px;
+  margin-bottom: 50px;
+  background: white;
+  padding:100px 150px;
+  z-index: 3;
 }
 
 
 .content{
-  flex: 0 0 70%;
-  padding: 40px 200px;
+  flex: 0 0 80%;
+  padding: 40px 40px;
   background: #F7F7F7;
   z-index: 5;
 }
 
 .sidebar{
 
-background: white;
- flex: 0 0 20%;
- position:relative;
-
+ flex: 0 0 15%;
+ background: red;
 }
 
-
-.sidebar h1{
-  font-size: 5rem;
-}
 
 
 .inSide{
-  transform: rotate(-90deg);
-  position: absolute;
-top: 80vh;
+
+  height: 100vh;
+   position: absolute;
 }
+
+
+.inSide div{
+  position: absolute;
+  top: 80vh;
+  transform: rotate(-90deg);
+}
+
+.word{
+  position: absolute;
+  top: 80vh;
+  background: red;
+
+}
+
+.picHome{
+z-index: 4;}
 
 .flexbox{
   display: flex;
 justify-content: space-between;
-height: 500vh;
+height: 300vh;
 }
 
 .Title{
-  margin: 50px;
+  margin: 30px;
+  font-size: 6rem;
+  font-family: roboto;
+  font-weight: 900;
+  z-index: 200;
 }
 
+
+.TitleBis{
+
+  color: transparent;
+  -webkit-text-stroke: .05rem #111;
+}
 
 .templates h2{
   font-family: roboto;
@@ -672,7 +698,7 @@ height: 500vh;
   border-bottom: .05rem solid black ;
       font-size: 3rem;
       font-weight: 900;
-      color: transparent;
+
       -webkit-text-stroke: .05rem #111;
 
 }
@@ -680,4 +706,58 @@ height: 500vh;
 .templates h2:hover{
   cursor: pointer;
   color: black;
+}
+
+.icones{
+  font-size: 2rem;
+  width: 500px;
+  text-align: center
+}
+
+.icones>* {
+  margin: 10px;
+  font-size: 5rem;
+}
+
+
+.custom-class{
+
+  height: 100px;
+  width: 500px;
+}
+
+.cogs{
+padding: 20px;
+font-size: 3rem;
+}
+
+.custom-class h2{
+  font-size: 3rem;
+  color: black;
+  font-weight: 900;
+    width: 900px;
+    font-family: roboto;
+}
+
+.span{
+  color: transparent;
+  -webkit-text-stroke: .05rem #111;
+}
+
+.giphy-embed{
+  margin-left:30%;
+
+}
+
+.details{
+  background: white;
+  padding: 50px;
+  width: 70%;
+    margin-top: -70px;
+}
+
+.details h3{
+font-family: Roboto;
+font-size: 3rem;
+
 }

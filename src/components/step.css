@@ -1,6 +1,12 @@
 .step{
-width: 50%;
-margin: 200px 100px;
+width: 70%;
+margin: 100px 50px;
+transform: translateY(500px);
+transition: all 3s ease-out;
+background: white;
+padding: 30px;
+
+
 }
 
 
@@ -10,6 +16,7 @@ margin: 200px 100px;
   font-family: roboto;
   font-weight: 900;
   padding: 20px;
+  z-index: 200;
 
 }
 
@@ -18,9 +25,17 @@ margin: 200px 100px;
   font-family: roboto;
   font-weight: 900;
   font-size: 2em;
+  transition: all 3s ease-out;
+  z-index: 100;
 }
 
 
 .margin{
-  margin-left: 400px;
+  margin-left: 500px;
+}
+
+.steps{
+margin-top: -400px;
+width: 100%;
+
 }

@@ -13,22 +13,22 @@ class Steps extends Component {
     let StepsArray = [
       { number: 1,
         id: 1,
-        text: "Lorem ipsum dolor sit amet."
+        text: 'Choisis ton template ou créée ton propre design'
     },
     {
       number:2,
       id: 2,
-      text: "Lorem ipsum dolor sit amet."
+      text: "Contacte-nous pour discuter du projet"
     },
     {
       number:3,
       id: 3,
-      text: "Lorem ipsum dolor sit amet."
+      text: "Envoie nous les photos et infos à mettre"
     },
     {
       number:4,
       id: 4,
-      text: "Lorem ipsum dolor sit amet."
+      text: "Site développé et référencé!"
     }
     ]
 
@@ -36,7 +36,6 @@ class Steps extends Component {
       if ( st.number % 2 === 0) {
         return <div key={st.i} className="margin">
         <Step
-
           number={st.number}
           exp={st.text} />
       </div>
