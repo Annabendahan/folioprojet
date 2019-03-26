@@ -43,7 +43,6 @@ class Templates extends Component {
     return (
  <Layout>
     <SEO title="Templates" />
-
     <div className="templates">
       <div
         style ={{
@@ -71,7 +70,14 @@ class Templates extends Component {
         }}>
       <h2>Sober</h2>
       </div>
+
+         <iframe src="https://giphy.com/embed/3o7TKEdVH8csXxKDO8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hairspraylive-nbc-hairspray-live-3o7TKEdVH8csXxKDO8">via GIPHY</a></p>
+
+      <h2> Ou alors ... ton design </h2>
+
+
     </div>
+
 
     <Link to="/">Go back to the homepage</Link>
   </Layout>

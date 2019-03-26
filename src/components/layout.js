@@ -9,12 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import Sidebar from "./sidebar"
 import { StaticQuery, graphql } from "gatsby"
-
+import pic1 from '../images/foliofolio.png';
 import Header from "./header"
 import "./layout.css"
 import Menu from './menu'
 import Footer from './footer'
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -31,9 +32,13 @@ const Layout = ({ children }) => (
       <>
       <ParallaxProvider>
 
+
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div className="flexbox">
         <div className="content" >
-          <Header siteTitle={data.site.siteMetadata.title} />
+
+
+
           <div
             style={{
               margin: `0 auto`,
@@ -48,6 +53,10 @@ const Layout = ({ children }) => (
         <div className="sidebar">
           <Sidebar />
         </div>
+
+
+
+
       </div>
 
           <Footer />

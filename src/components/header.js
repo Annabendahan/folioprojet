@@ -12,22 +12,17 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
       position: `fixed`,
       left: `10px`,
-      top: `0px`
+      top: `0px`,
+      color: `black`,
+      zIndex: `300`
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
 
-      </h1>
-      <Menu />
 
-    </div>
+<Menu />
+
+
+
   </header>
 )
 

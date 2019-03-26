@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { FaAngellist } from 'react-icons/fa';
+import { FaFolderOpen } from 'react-icons/fa';
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -13,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Parallax className="Title-c" y={[-200, 80]} tagOuter="figure">
-        <h1 className="Title">Ton <span className="TitleBis"> Portfolio </span> </h1>
+        <h1 className="Title">Sites & <span className="TitleBis"> Portfolios </span> </h1>
     </Parallax>
 
     <div style={{ width: `70%`, marginBottom: `1.45rem`, marginLeft: '12rem'}}>
@@ -30,6 +31,7 @@ const IndexPage = () => (
     <Overlap />
     <Steps/>
 
+<Link to="/templates/" > <p className="linkT">   Voir les <span className="span"> templates </span>  < FaFolderOpen/> </p> </Link>
   </Layout>
 )
 

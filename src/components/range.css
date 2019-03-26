@@ -1,0 +1,41 @@
+.ViteFait{
+  padding: 30px;
+  color: #F60E46;
+  opacity: 0.3;
+  font-size: 1.5rem;
+}
+
+
+.Tranquille{
+  padding: 30px;
+  color: #F60E46;
+  opacity: 0.5;
+  font-size: 1.6rem;
+}
+
+.Cool{
+  padding: 30px;
+  color: #F60E46;
+  opacity: 0.7;
+  font-size: 1.7rem;
+}
+
+.Jelike{
+  padding: 30px;
+  color: #F60E46;
+  opacity: 0.8;
+  font-size: 1.8rem;
+}
+
+
+
+.CoupdeC{
+  padding: 30px;
+  color: #F60E46;
+  font-size: 1.9rem;
+}
+
+
+input{
+  border: none;
+}

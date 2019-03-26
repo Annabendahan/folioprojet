@@ -629,13 +629,14 @@ pre tt:after {
   margin-bottom: 50px;
   background: white;
   padding:100px 150px;
-  z-index: 3;
+
+
 }
 
 
 .content{
   flex: 0 0 80%;
-  padding: 40px 40px;
+  padding: 40px 70px;
   background: #F7F7F7;
   z-index: 5;
 }
@@ -643,7 +644,7 @@ pre tt:after {
 .sidebar{
 
  flex: 0 0 15%;
- background: red;
+
 }
 
 
@@ -674,7 +675,7 @@ z-index: 4;}
 .flexbox{
   display: flex;
 justify-content: space-between;
-height: 300vh;
+height: 500vh;
 }
 
 .Title{
@@ -682,14 +683,21 @@ height: 300vh;
   font-size: 6rem;
   font-family: roboto;
   font-weight: 900;
-  z-index: 200;
+
 }
 
+.content a{
+  text-decoration: none;
+}
 
 .TitleBis{
 
   color: transparent;
   -webkit-text-stroke: .05rem #111;
+}
+
+.templates{
+  padding: 30px;
 }
 
 .templates h2{
@@ -703,9 +711,14 @@ height: 300vh;
 
 }
 
+.pic-sidebar{
+  height: 90vh;
+  width: 400px;
+}
+
 .templates h2:hover{
-  cursor: pointer;
-  color: black;
+color:black;
+cursor: pointer;
 }
 
 .icones{
@@ -746,6 +759,7 @@ font-size: 3rem;
 
 .giphy-embed{
   margin-left:30%;
+  margin-top: 120px;
 
 }
 
@@ -761,3 +775,23 @@ font-family: Roboto;
 font-size: 3rem;
 
 }
+
+.linkT{
+margin: 40px;
+margin-top: 600px;
+padding: 20px;
+font-size: 3rem;
+font-family: Roboto;
+text-decoration: none;
+color: black;
+font-weight: 900;
+}
+
+span:hover{
+color: yellow;
+-webkit-text-stroke: .0rem #111;
+transition: all 0.5s ease-out;
+}
+
+
+
