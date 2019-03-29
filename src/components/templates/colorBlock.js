@@ -5,10 +5,10 @@ import React, {Component} from "react"
 import { FaLocationArrow } from 'react-icons/fa';
 import './newspaper.css'
 import { Document } from 'react-pdf'
-import pic1 from '../../images/Capture d’écran 2019-03-29 à 12.53.29.png';
-import pic2 from '../../images/Capture d’écran 2019-03-29 à 12.53.55.png';
-import pic3 from '../../images/Capture d’écran 2019-03-29 à 12.59.36.png';
-import pic4 from '../../images/Capture d’écran 2019-03-29 à 12.59.57.png';
+import pic1 from '../../images/Color1.png';
+import pic2 from '../../images/Color2.png';
+import pic3 from '../../images/Color3.png';
+import pic4 from '../../images/Color4.png';
 import Backdrop from '../backdrop'
 
 

@@ -9,7 +9,7 @@ import Steps from "../components/steps"
 import Overlap from '../components/IntroCopy'
 import { Parallax } from 'react-scroll-parallax';
 import pic1 from '../images/galymzhan-abdugalimov-181-unsplash.jpg';
-import Video from '../images/folderOpening_4.gif'
+
 
 const IndexPage = () => (
   <Layout>

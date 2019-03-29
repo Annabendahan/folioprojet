@@ -4,10 +4,10 @@ import Pic from '../pic'
 import React, {Component} from "react"
 import { FaLocationArrow } from 'react-icons/fa';
 import './newspaper.css'
-import pic1 from '../../images/Capture d’écran 2019-03-29 à 13.09.51.png';
-import pic2 from '../../images/Capture d’écran 2019-03-29 à 13.10.54.png';
-import pic3 from '../../images/Capture d’écran 2019-03-29 à 13.11.05.png';
-import pic4 from '../../images/Capture d’écran 2019-03-29 à 13.11.16.png';
+import pic1 from '../../images/News1.png';
+import pic2 from '../../images/News2.png';
+import pic3 from '../../images/News3.png';
+import pic4 from '../../images/Nesw4.png';
 import Backdrop from '../backdrop'
 
 
