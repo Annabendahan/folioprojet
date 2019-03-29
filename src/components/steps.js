@@ -13,22 +13,22 @@ class Steps extends Component {
     let StepsArray = [
       { number: 1,
         id: 1,
-        text: 'Choisis ton template ou créée ton propre design'
+        text: 'Choisis ton modèle (template) ou créée ton propre design'
     },
     {
       number:2,
       id: 2,
-      text: "Contacte-nous pour discuter du projet"
+      text: "Contacte-nous pour discuter du projet (qui es-tu, que veux-tu, tarifs)"
     },
     {
       number:3,
       id: 3,
-      text: "Envoie nous les photos et infos à mettre"
+      text: "Envoie-nous les photos et infos à remplir"
     },
     {
       number:4,
       id: 4,
-      text: "Site développé et référencé!"
+      text: "On développe le site!"
     }
     ]
 

@@ -8,7 +8,7 @@ const Step = (props) => (
   <div className="step">
 
   <p className="bigNumber"> {props.number} </p>
-   <Parallax className="" y={[-200, 50]} tagOuter="figure">
+   <Parallax className="" y={[-100, 50]} tagOuter="figure">
         <h3 className="exp"> {props.exp} </h3>
     </Parallax>
 

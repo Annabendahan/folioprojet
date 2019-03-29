@@ -634,8 +634,12 @@ pre tt:after {
 }
 
 
+video{
+z-index: 200;}
+
+
 .content{
-  flex: 0 0 80%;
+  flex: 0 0 90%;
   padding: 40px 70px;
   background: #F7F7F7;
   z-index: 5;
@@ -643,7 +647,8 @@ pre tt:after {
 
 .sidebar{
 
- flex: 0 0 15%;
+ flex: 0 0 10%;
+ background: yellow;
 
 }
 
@@ -739,9 +744,16 @@ cursor: pointer;
   width: 500px;
 }
 
+
+.cogsTitle{
+  position: relative;
+}
+
 .cogs{
-padding: 20px;
-font-size: 3rem;
+  position: absolute;
+  left: -100px;
+  top: -20px;
+  height:100px;
 }
 
 .custom-class h2{
@@ -766,14 +778,21 @@ font-size: 3rem;
 .details{
   background: white;
   padding: 50px;
-  width: 70%;
+  width: 75%;
     margin-top: -70px;
 }
 
 .details h3{
 font-family: Roboto;
-font-size: 3rem;
+font-size: 2.7rem;
 
+}
+.explication{
+  width: 70%;
+  background: white;
+  text-align: justify;
+  padding: 50px;
+  margin-left: 300px;
 }
 
 .linkT{
@@ -787,11 +806,23 @@ color: black;
 font-weight: 900;
 }
 
-span:hover{
+.span2{
+  color: black;
+  font-weight: 900;
+
+}
+
+.span2:hover{
+  color: yellow;
+  cursor: pointer;
+}
+.span1:hover{
 color: yellow;
 -webkit-text-stroke: .0rem #111;
-transition: all 0.5s ease-out;
+transition: all 1s ease-out;
 }
 
 
-
+.arrow{
+  padding: 20px;
+}

@@ -16,21 +16,20 @@ class Range extends Component {
 
 
   render(){
-    console.log(this.state.value)
+    console.log(parseInt(this.state.value))
 
 
     let output = ''
 
 
-    if (this.state.value === "1" || this.state.value === "2") {
+
+    if ( parseInt(this.state.value) < 3) {
       output = <h3 className= "ViteFait"> Vite fait </h3>
-    } else if (this.state.value === "3" || this.state.value === "4") {
+    } else if (parseInt(this.state.value) < 6) {
       output = <h3 className= "Tranquille"> Tranquille </h3>
-    } else if (this.state.value === "5" || this.state.value === "6") {
-      output = <h3 className= "Cool"> Plutôt cool! </h3>
-    } else if (this.state.value === "7" || this.state.value === "8")  {
+    } else if ( parseInt(this.state.value) < 8) {
       output = <h3 className= "Jelike"> Je like ! <FaThumbsUp /> </h3>
-    } else if (this.state.value === "9" || this.state.value === "10")  {
+    } else if ( parseInt(this.state.value) < 11) {
       output = <h3 className= "CoupdeC "> Coup de <FaHeart /> </h3>
     }
 

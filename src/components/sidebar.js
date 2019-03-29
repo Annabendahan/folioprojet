@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 const Sidebar = (props) => (
 
 <Parallax className="inSide" y={[-1000,1000]} tagOuter="figure">
-        <div> yoyo</div>
+
     </Parallax>
 )
 

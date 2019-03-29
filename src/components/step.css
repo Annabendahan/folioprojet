@@ -1,6 +1,7 @@
 .step{
 width: 70%;
 margin: 100px 50px;
+margin-right: 0px;
 transform: translateY(500px);
 transition: all 3s ease-out;
 background: white;
@@ -23,7 +24,8 @@ padding: 30px;
 
 .exp{
   font-family: roboto;
-  font-weight: 900;
+  font-weight: 700;
+
   font-size: 2em;
   transition: all 3s ease-out;
   z-index: 100;
@@ -31,7 +33,9 @@ padding: 30px;
 
 
 .margin{
-  margin-left: 500px;
+  margin-left: 400px;
+   padding-top: 20px;
+  margin-top: 20px
 }
 
 .steps{

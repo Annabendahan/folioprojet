@@ -2,11 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import Pic from '../pic'
 import React, {Component} from "react"
+import { FaLocationArrow } from 'react-icons/fa';
 import './newspaper.css'
-import pic1 from '../../images/Capture d’écran 2019-03-24 à 17.32.15.png';
-import pic2 from '../../images/Capture d’écran 2019-03-24 à 17.32.25.png';
-import pic3 from '../../images/Capture d’écran 2019-03-24 à 17.32.35.png';
-import pic4 from '../../images/Capture d’écran 2019-03-24 à 17.32.54.png';
+import pic1 from '../../images/Capture d’écran 2019-03-29 à 13.09.51.png';
+import pic2 from '../../images/Capture d’écran 2019-03-29 à 13.10.54.png';
+import pic3 from '../../images/Capture d’écran 2019-03-29 à 13.11.05.png';
+import pic4 from '../../images/Capture d’écran 2019-03-29 à 13.11.16.png';
 import Backdrop from '../backdrop'
 
 
@@ -51,7 +52,8 @@ return(
 <div className="newspaper">
 <Backdrop show={this.state.pic} clicked={this.closePicHandler}/>
 {pic}
-  <p> Template au style journal, tons Noir et Blanc, couleur modifiable.  </p>
+  <p> Template au style journalistique, tons Noir et Blanc. <span className="span2">GO < FaLocationArrow/></span> </p>
+  <p> 1 page, 3 onglet. Couleur et nom des onglets modifiables. </p>
 
   <div className="pics">
   <img  src={pic1} className="pic" alt="fireSpot"  onClick={this.openPic1Handler}/>

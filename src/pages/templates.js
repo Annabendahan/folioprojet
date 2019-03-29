@@ -1,10 +1,13 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
-
+import { FaLocationArrow } from 'react-icons/fa';
+import { FaCopy } from 'react-icons/fa';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Newspaper from "../components/templates/newspaper"
 import Modern from "../components/templates/modern"
+import ColorBlock from "../components/templates/colorBlock"
+import { Parallax } from 'react-scroll-parallax';
 
 class Templates extends Component {
 
@@ -12,7 +15,8 @@ class Templates extends Component {
     newspaper: false,
     modern: false,
     colorBlock: false,
-    sober: false
+    sober: false,
+    tonDesign: false
   }
 
   displayNewspaper = () => {
@@ -22,6 +26,15 @@ class Templates extends Component {
 
    displayModern = () => {
     this.setState({ modern: !this.state.modern})
+  }
+
+
+displayColorBlock = () => {
+    this.setState({ colorBlock: !this.state.colorBlock})
+  }
+
+  displayTonDesign = () => {
+    this.setState({ tonDesign: !this.state.tonDesign})
   }
 
 
@@ -40,9 +53,37 @@ class Templates extends Component {
       modern= <Modern />
     }
 
+    let colorBlock = '';
+
+    if (this.state.colorBlock === true) {
+      colorBlock= <ColorBlock />
+    }
+
+    let tonDesign = '';
+    if (this.state.tonDesign === true) {
+      tonDesign= <div>
+          <p> Tu as déjà un design? Envoie-le nous et on développe le site! <Link to="/contact/" >
+              <span className="span2">GO < FaLocationArrow/></span>  </Link> </p>
+
+         <iframe src="https://giphy.com/embed/3o7TKEdVH8csXxKDO8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    }
+
     return (
  <Layout>
-    <SEO title="Templates" />
+    <SEO title="Templates" keywords={[`webdesign`, `portfolio`, `webdevelopment`]} />
+    <h1 className="Title"> <span className ="span"> Nos</span>  Templates</h1>
+
+    <Parallax className="" y={[80,-50]} tagOuter="figure">
+    <div className="explication">
+      <h3 className="descG"> C'est quoi? <FaCopy />  </h3>
+      <p className=""> Les templates sont des modèles, des design-types que nous proposons. Choisissez votre
+    modèle préféré et nous l'adapterons à votre activité et à ce que vous souhaitez montrer!
+    Vous pouvez aussi choisir nous demander un design unique, ou nous donner votre propre
+    design que nous développerons.  </p>
+    </div>
+  </Parallax>
+
     <div className="templates">
       <div
         style ={{
@@ -62,24 +103,19 @@ class Templates extends Component {
         style ={{
           color: this.state.colorBlock ? `black` : `transparent`
         }}>
-          <h2>ColorBlock</h2>
+          <h2 onClick={this.displayColorBlock}>ColorBlock</h2>
       </div>
+      {colorBlock}
       <div
         style ={{
           color: this.state.sober ? `black` : `transparent`
         }}>
-      <h2>Sober</h2>
+      <h2  onClick={this.displayTonDesign} >Ou alors... ton design </h2>
+      </div>
+      {tonDesign}
       </div>
 
-         <iframe src="https://giphy.com/embed/3o7TKEdVH8csXxKDO8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hairspraylive-nbc-hairspray-live-3o7TKEdVH8csXxKDO8">via GIPHY</a></p>
 
-      <h2> Ou alors ... ton design </h2>
-
-
-    </div>
-
-
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 
       )

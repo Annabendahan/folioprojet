@@ -2,7 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, {Component} from "react"
 import './menu.css'
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaFolderOpen, FaPhone } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 import Backdrop from './Backdrop'
 
@@ -34,9 +35,12 @@ render() {
            </div>
   } else if (this.state.show === 'menu') {
     menu = <div className="menu">
-            <Link to="/"> <p> Home </p> </Link>
-             <Link to="/templates/"> <p> Templates </p> </Link>
-             <Link to="/contact/"> <p> Contact </p> </Link>
+
+            <Link to="/"> <p> <span className= "Fa"> <FaHome /> </span> Home </p> </Link>
+
+             <Link to="/templates/"> <p> <span className= "Fa"> <FaFolderOpen /> </span>  Templates </p> </Link>
+
+             <Link to="/contact/"> <p> <span className= "Fa"> <FaPhone /> </span> Contact </p> </Link>
             <p className="close"onClick={this.iconeAppearsHandler} >
               <FaTimes />
             </p>
