@@ -5,7 +5,8 @@ import './menu.css'
 import { FaBars, FaFolderOpen, FaPhone } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
-import Backdrop from './Backdrop'
+import Backdrop from './backdrop'
+
 
 
 
