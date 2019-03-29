@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, {Component} from "react"
 import './step.css'
-import Step from './Step'
+import Step from './step'
 
 
 class Steps extends Component {
