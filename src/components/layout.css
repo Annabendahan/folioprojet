@@ -667,7 +667,7 @@ z-index: 200;}
 
 .contentHome{
   background: #FCFCFC;
-  height: 250vh;
+  height: 180vh;
 }
 
 
@@ -732,7 +732,7 @@ position:relative;
   width: 300px;
   height: 450px;
   background: #91DCFD;
-  margin-left: 60%;
+  margin-left: 55%;
   margin-top: -550px;
 
 }
