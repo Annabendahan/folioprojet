@@ -1,45 +1,65 @@
 .step{
-width: 70%;
-margin: 100px 50px;
-margin-right: 0px;
+width: 230px;
+height: 300px;
+
+float: left;
 transform: translateY(500px);
-transition: all 3s ease-out;
 background: white;
-padding: 30px;
+padding: 20px;
+padding-top: 60px;
+ text-align: center;
+ margin:10px;
 
-
-}
-
-
-.bigNumber{
-  color: yellow;
-  font-size: 15em;
-  font-family: roboto;
-  font-weight: 900;
-  padding: 20px;
-  z-index: 200;
+border-radius: 5px;
 
 }
 
 
-.exp{
-  font-family: roboto;
-  font-weight: 700;
-
-  font-size: 2em;
-  transition: all 3s ease-out;
-  z-index: 100;
+.subtitle{
+  color: #0D81B3;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
-
-.margin{
-  margin-left: 400px;
-   padding-top: 20px;
-  margin-top: 20px
-}
 
 .steps{
 margin-top: -400px;
-width: 100%;
+  background: red;
+display: block;
+text-align:center;
+margin-left: 8%;
 
 }
+
+
+
+
+
+.exp{
+  margin-top: -30px;
+  font-family: roboto;
+  visibility: hidden;
+  font-size: .9rem;
+  z-index: 100;
+
+}
+
+.step:hover  .exp{
+  color: grey;
+  visibility: visible;
+}
+
+.step:hover  .subtitle{
+  color:white;
+
+}
+
+
+.step:hover{
+    box-shadow: 0 4px 92px rgba(0,0,0,.11);
+    padding-top: 20px;
+    transition: all 1s ease-out;
+}
+
+
+

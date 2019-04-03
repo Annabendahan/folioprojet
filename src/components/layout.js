@@ -34,8 +34,9 @@ const Layout = ({ children }) => (
 
 
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="flexbox">
-        <div className="content" >
+      <div className="content">
+
+
 
 
 
@@ -48,16 +49,9 @@ const Layout = ({ children }) => (
             }}
           > </div>
             <main>{children}</main>
-        </div>
-
-        <div className="sidebar">
-          <Sidebar />
-        </div>
+            </div>
 
 
-
-
-      </div>
 
           <Footer />
            </ParallaxProvider>

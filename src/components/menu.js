@@ -32,18 +32,26 @@ render() {
 
   if (this.state.show === 'icone') {
     menu = <div className="menuSmall" onClick={this.menuAppearsHandler}>
-            <FaBars />
+            <svg id="svg"  viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line id="line1" x1="14" y1="15.5" x2="87" y2="15.5" stroke="black" stroke-width="3"/>
+<line x1="14" y1="38.5" x2="87" y2="38.5" stroke="black" stroke-width="3"/>
+<line x1="14" y1="61.5" x2="87" y2="61.5" stroke="black" stroke-width="3"/>
+</svg>
+
            </div>
   } else if (this.state.show === 'menu') {
     menu = <div className="menu">
 
-            <Link to="/"> <p> <span className= "Fa"> <FaHome /> </span> Home </p> </Link>
+            <Link to="/"> <p> <span className= "Fa"> <FaHome /> </span> HOME </p> </Link>
 
-             <Link to="/templates/"> <p> <span className= "Fa"> <FaFolderOpen /> </span>  Templates </p> </Link>
+             <Link to="/projets/"> <p> <span className= "Fa"> <FaFolderOpen /> </span>  PROJETS</p> </Link>
 
-             <Link to="/contact/"> <p> <span className= "Fa"> <FaPhone /> </span> Contact </p> </Link>
+             <Link to="/contact/"> <p> <span className= "Fa"> <FaPhone /> </span> CONTACT </p> </Link>
             <p className="close"onClick={this.iconeAppearsHandler} >
-              <FaTimes />
+              <svg id="cross" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="23.9244" y1="63.3012" x2="74.8046" y2="10.9543" stroke="white" stroke-width="3"/>
+<line x1="24.023" y1="12.903" x2="77.4122" y2="62.6885" stroke="white" stroke-width="3"/>
+</svg>
             </p>
             </div>
   }

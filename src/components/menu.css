@@ -1,7 +1,6 @@
 .menu{
 background: black;
 color:white;
-width: 200px;
 z-index: 300;
 position: fixed;
 top: 20px;
@@ -11,25 +10,26 @@ font-family: roboto;
 font-weight: 500;
 position: relative;
 height: 100vh;
-width:300px;
+width:250px;
 margin: -30px;
 }
 
 
 .menu p{
-
+font-size: .9rem;
+font-weight: 100;
 }
 .menu a{
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  padding: 20px;
+  padding: 10px;
 }
 
 .menu a:hover{
-  font-weight: 900;
-  color: yellow;
+  color: #80EFF6;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 
 .menuSmall{
@@ -40,9 +40,25 @@ margin: -30px;
 
 }
 
+
+svg#cross:hover{
+   width: 45px;
+  height: 45px;
+}
+svg#svg{
+
+  width: 50px;
+  height: 100px;
+}
+
+svg#svg:hover{
+  width: 60px;
+  transition: all .5s ease-out;
+}
+
 .menuSmall:hover{
-  font-size: 2.2rem;
   cursor: pointer;
+
 }
 
 

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaFacebook } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -10,22 +10,17 @@ import Steps from "../components/steps"
 import { Parallax } from 'react-scroll-parallax';
 import Range from "../components/range"
 import Video from '../images/cogwheelsilhouette_2.gif'
+import picPhone from '../images/pavan-trikutam-1660-unsplash.jpg';
 
 const Contact = () => (
   <Layout>
   <SEO title="Contact" keywords={[`webdesign`, `portfolio`, `webdevelopment`]} />
-  <h1 className="Title"> Contact</h1>
-  <Parallax className="" y={[-80,60]} tagOuter="figure">
-    <iframe src="https://giphy.com/embed/xUNd9XoXTfSdPsBh9m" width="800" height="400" frameBorder="0" className="giphy-embed" allowFullScreen>
-    </iframe>
-  </Parallax>
-  <Parallax className="" y={[40,-20]} tagOuter="figure">
+  <h1 className="TitleC"> Contact</h1>
+    <img  src={picPhone} className="picPhone" alt="fireSpot"/>
+  <Parallax className="" y={[-10,50]} tagOuter="figure">
     <div className="details">
-    <h3> an.bendahan@gmail.com</h3>
-    <h3> 0659133919 </h3>
-    <p> Contactez-nous pour nous poser vos questions, nous expliquer vos besoins,
-    connaître nos tarifs
-  et peut-être commencer le projet ! </p>
+    <p> <span className="Mail"> <FaEnvelope />  </span> an.bendahan@gmail.com  </p>
+    <p> <span className="Phone"> <FaPhone/> </span> 0659133919 </p>
     <div className = "icones" >
     </div>
     </div>

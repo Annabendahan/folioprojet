@@ -8,9 +8,9 @@ import Video from '../images/cogwheelsilhouette_2.gif'
 
 
 const IntroCopy = () => (
-      <Parallax className="custom-class" x={[20, 100]} tagOuter="figure">
+      <Parallax className="" x={[100, 110]} tagOuter="figure">
 
-      <h2 className="cogsTitle">  <img src={Video} className= "cogs" alt="loading..." />  Comment ça <span className="span"> marche </span> ? </h2>
+      <div className="cogsTitle"> </div>
     </Parallax>
 
 );
