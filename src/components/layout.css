@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: Open Sans;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -185,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: roboto;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -227,6 +227,7 @@ h1 {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+   font-family: roboto;
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: black;
@@ -661,6 +662,7 @@ z-index: 200;}
   background: #FCFCFC;
   z-index: 5;
   margin-top: -30px;
+  font-family: roboto;
 
 
 }
@@ -679,7 +681,7 @@ padding:60px 21%;
 
 @media(max-width: 600px) {
   .contentHome{
-    height: 300vh;
+    height: 340vh;
   }
 
 }
@@ -786,6 +788,7 @@ height: 500vh;
   font-size: 3rem;
   font-weight: 700;
   margin-left: 10%;
+  font-family: roboto;
 }
 .TitleHome{
   margin: 30px;
@@ -811,6 +814,7 @@ height: 500vh;
 .Title{
   color: #0D81B3;
   font-size: 3rem;
+  font-family: Roboto;
   font-weight: 700;
   margin-left: 50%;
 
