@@ -8,6 +8,7 @@ import Newspaper from "../components/templates/newspaper"
 import Modern from "../components/templates/modern"
 import ColorBlock from "../components/templates/colorBlock"
 import { Parallax } from 'react-scroll-parallax';
+import Rentman from "../components/templates/rentman"
 
 class Templates extends Component {
 
@@ -59,20 +60,15 @@ displayColorBlock = () => {
       colorBlock= <ColorBlock />
     }
 
-    let tonDesign = '';
+    let rentman = '';
     if (this.state.tonDesign === true) {
-      tonDesign= <div>
-          <p> Tu as déjà un design? Envoie-le nous et on développe le site! <Link to="/contact/" >
-              <span className="span2">GO < FaLocationArrow/></span>  </Link> </p>
-
-         <iframe src="https://giphy.com/embed/3o7TKEdVH8csXxKDO8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </div>
+      rentman= <Rentman />
     }
 
     return (
  <Layout>
     <SEO title="Templates" keywords={[`webdesign`, `portfolio`, `webdevelopment`]} />
-    <h1 className="Title"> <span className ="span"> Les </span>  Templates </h1>
+    <h1 className="Title"> <span className ="span"> </span>  Design </h1>
 
     <div className="templates">
       <div
@@ -100,9 +96,9 @@ displayColorBlock = () => {
         style ={{
           color: this.state.sober ? `black` : `transparent`
         }}>
-      <h2  onClick={this.displayTonDesign} >Ou alors... ton design </h2>
+      <h2  onClick={this.displayTonDesign} >Rentman</h2>
       </div>
-      {tonDesign}
+      {rentman}
       </div>
 
 

@@ -52,8 +52,6 @@ return(
 <div className="newspaper">
 <Backdrop show={this.state.pic} clicked={this.closePicHandler}/>
 {pic}
-  <p> Template au style journalistique, tons Noir et Blanc. <span className="span2">GO < FaLocationArrow/></span> </p>
-  <p> 1 page, 3 onglet. Couleur et nom des onglets modifiables. </p>
 
   <div className="pics">
   <img  src={pic1} className="pic" alt="fireSpot"  onClick={this.openPic1Handler}/>

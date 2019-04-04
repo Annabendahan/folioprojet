@@ -4,15 +4,14 @@ import Pic from '../pic'
 import React, {Component} from "react"
 import { FaLocationArrow } from 'react-icons/fa';
 import './newspaper.css'
-import { Document } from 'react-pdf'
-import pic1 from '../../images/Modern1.png';
-import pic2 from '../../images/Modern2.png';
-import pic3 from '../../images/Modern3.png';
-import pic4 from '../../images/Modern4.png';
+import pic1 from '../../images/bannerrentman.png';
+import pic2 from '../../images/rentman banner.jpg';
+import pic3 from '../../images/banner2.png';
+
 import Backdrop from '../backdrop'
 
 
-class Modern extends Component{
+class Rentman extends Component{
 
   state = {
     pic: false,
@@ -32,9 +31,7 @@ class Modern extends Component{
     this.setState({pic: true, picName: pic3})
   }
 
-  openPic4Handler= () => {
-    this.setState({pic: true, picName: pic4})
-  }
+
 
   closePicHandler = () => {
     this.setState({pic: false})
@@ -54,12 +51,11 @@ return(
 <Backdrop show={this.state.pic} clicked={this.closePicHandler}/>
 {pic}
 
-
   <div className="pics">
   <img  src={pic1} className="pic" alt="fireSpot"  onClick={this.openPic1Handler}/>
    <img  src={pic2} className="pic" alt="fireSpot" onClick={this.openPic2Handler} />
     <img  src={pic3} className="pic" alt="fireSpot" onClick={this.openPic3Handler} />
-     <img  src={pic4} className="pic" alt="fireSpot" onClick={this.openPic4Handler} />
+
      </div>
   </div>
 
@@ -73,7 +69,4 @@ return(
 
 
 
-
-
-
-export default Modern;
+export default Rentman;

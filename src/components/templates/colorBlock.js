@@ -53,8 +53,7 @@ return(
 <div className="newspaper">
 <Backdrop show={this.state.pic} clicked={this.closePicHandler}/>
 {pic}
-  <p> Template coloré et destructuré. <span className="span2">GO < FaLocationArrow/></span> </p>
-  <p> 1 page, 3 onglets. Couleurs et noms des onglets modifiables. </p>
+
 
   <div className="pics">
   <img  src={pic1} className="pic" alt="fireSpot"  onClick={this.openPic1Handler}/>
