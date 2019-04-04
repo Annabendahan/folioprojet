@@ -30,29 +30,33 @@ class Projets extends Component {
 
 
     <div className= "projet">
-     <Link to="https://ma-todolist.herokuapp.com/"> <div className= "imgs" >
-       <h3 className= "projet-title">Ma Todolist <span className= "go-icone"> <FaLocationArrow  /></span></h3>
+     <a target="_blank" rel="noopener noreferrer" href="https://ma-todolist.herokuapp.com/">
+      <div className= "imgs" >
+       <h3 className= "projet-title" >Ma Todolist <span className= "go-icone"> <FaLocationArrow  /></span></h3>
        <img  src={picTodolist} className="picProjet" alt="fireSpot" />
 
-       </div> </Link>
+       </div> </a>
     </div>
 
 
      <div className= "projet right">
-      <Link to="https://makeyourburger.herokuapp.com/"> <div className= "imgs" >
+
+      <a target="_blank" rel="noopener noreferrer" href="https://makeyourburger.herokuapp.com/">
+       <div className= "imgs" >
        <h3 className= "projet-title"> BurgerApp<span className= "go-icone"> <FaLocationArrow  /></span> </h3>
          <img  src={picBurgerapp} className="picProjet" alt="fireSpot" />
 
-       </div> </Link>
+       </div> </a>
     </div>
 
 
     <div className= "projet">
-       <Link to="https://www.easyfork.xyz/"><div className= "imgs" >
+        <a target="_blank" rel="noopener noreferrer" href="https://www.easyfork.xyz/">
+        <div className= "imgs" >
        <h3 className= "projet-title"> EasyFork<span className= "go-icone"> <FaLocationArrow  /></span></h3>
          <img  src={picEasyfork} className="picProjet" alt="fireSpot" />
 
-       </div></Link>
+       </div></a>
     </div>
 
 
