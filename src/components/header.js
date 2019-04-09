@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `transparent`,
-      marginBottom: `1.45rem`,
+
       position: `fixed`,
       left: `10px`,
       top: `0px`,

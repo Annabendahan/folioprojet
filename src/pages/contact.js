@@ -14,7 +14,7 @@ import picPhone from '../images/pavan-trikutam-1660-unsplash.jpg';
 
 const Contact = () => (
   <Layout>
-  <SEO title="Contact" keywords={[`webdesign`, `portfolio`, `webdevelopment`]} />
+  <SEO title="Contact" keywords={[`designer`, `portfolio`, `developer`]} />
   <h1 className="TitleC"> Contact</h1>
     <img  src={picPhone} className="picPhone" alt="fireSpot"/>
   <Parallax className="" y={[-10,50]} tagOuter="figure">

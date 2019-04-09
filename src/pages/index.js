@@ -13,7 +13,7 @@ import pic1 from '../images/ANNa.png';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`webdesign`, `portfolio`, `webdevelopment`]} />
+    <SEO title="Home" keywords={[`designer`, `portfolio`, `developer`]} />
     <div className="contentHome">
     <Parallax className="Title-c" y={[-100, 80]} tagOuter="figure">
 

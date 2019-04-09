@@ -22,7 +22,7 @@ class Projets extends Component {
     return(
 
       <Layout>
-    <SEO title="Home" keywords={[`webdesign`, `portfolio`, `webdevelopment`]} />
+    <SEO title="Home" keywords={[`designer`, `portfolio`, `developer`]} />
 
 
  <h1 className="Title"> Les  projets </h1>
