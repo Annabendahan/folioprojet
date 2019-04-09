@@ -6,7 +6,7 @@ position: fixed;
 top: 20px;
 left: 20px;
 padding: 60px 20px;
-font-family: roboto;
+
 font-weight: 500;
 position: relative;
 height: 100vh;
@@ -33,13 +33,45 @@ font-weight: 100;
 }
 
 .menuSmall{
- font-size: 2rem;
+ width : 50px;
   color: black;
   z-index: 300;
   margin: 20px;
 
 }
 
+.menu-svg:hover  .line1{
+  left: 10px;
+  transition: all 2s ease-out;
+}
+
+
+.menuSmall:hover  .line3{
+  left: 10px;
+  transition: all 2s ease-out;
+}
+
+.line{
+  position: absolute;
+  width: 30px;
+}
+
+.line2{
+  top: 10px;
+}
+
+.line3{
+  top: 20px;
+}
+
+
+.menu-svg{
+  position: relative;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+
+}
 
 svg#cross:hover{
    width: 45px;
@@ -51,8 +83,9 @@ svg#svg{
   height: 100px;
 }
 
-svg#svg:hover{
-  width: 60px;
+svg#svg:hover > #line1 {
+
+  color: red;
   transition: all .5s ease-out;
 }
 

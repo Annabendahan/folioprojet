@@ -30,13 +30,34 @@ render() {
 
   let menu = ''
 
+  let svg1 = <svg id="svg"  viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line  x1="14" y1="15.5" x2="87" y2="15.5" stroke="black" stroke-width="3"/>
+<line  x1="14" y1="38.5" x2="87" y2="38.5" stroke="black" stroke-width="3"/>
+<line  x1="14" y1="61.5" x2="87" y2="61.5" stroke="black" stroke-width="3"/>
+</svg>
+
+let line1 = <svg className="line1" width="389" height="289" viewBox="0 0 389 289" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="76" y1="90.5" x2="268" y2="90.5" stroke="black" stroke-width="3"/>
+</svg>
+
+
   if (this.state.show === 'icone') {
     menu = <div className="menuSmall" onClick={this.menuAppearsHandler}>
-            <svg id="svg"  viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line id="line1" x1="14" y1="15.5" x2="87" y2="15.5" stroke="black" stroke-width="3"/>
-<line x1="14" y1="38.5" x2="87" y2="38.5" stroke="black" stroke-width="3"/>
-<line x1="14" y1="61.5" x2="87" y2="61.5" stroke="black" stroke-width="3"/>
+    <div className="menu-svg">
+    <svg className="line line1" width="17" height="1" viewBox="0 0 17 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="0.5" x2="30" y2="0.5" stroke="black"/>
 </svg>
+
+    <svg className="line line2" width="17" height="1" viewBox="0 0 17 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="0.5" x2="30" y2="0.5" stroke="black"/>
+</svg>
+
+    <svg className="line line3" width="17" height="1" viewBox="0 0 17 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="0.5" x2="30" y2="0.5" stroke="black"/>
+</svg>
+
+    </div>
+
 
            </div>
   } else if (this.state.show === 'menu') {
